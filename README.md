@@ -10,7 +10,7 @@ This version has been stripped down and reconfigured to work on IPFS with Fleek.
 
 To get started with the starter:
 
-git clone https://github.com/lpgcode/nextjs_mxd_blog_onfleek.git 
+git clone https://github.com/lpgcode/nextjs_md_styled_onfleek
 
 npm install && npm run dev - and then start styling.
 
@@ -18,8 +18,7 @@ When ready change the origin to your own repo, slap down all your git commands a
 
 Then just point https://fleek.co/ to your repo and BAM just like that you can get back to your regularly scheduled JAM stack workflow, now on IPFS. Thanks Fleek!
 
-I'll be configuring a basic styled components starter built off this too, check back soon.
 
 ## Demo
 
-[https://next-mxd.on.fleek.co/](https://next-mxd.on.fleek.co/)
+
