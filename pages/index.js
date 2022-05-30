@@ -6,17 +6,34 @@ import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
+import styled from 'styled-components'
+import { Container } from '../styles/global.styles'
+
+const StyledDiv = styled.div`
+  color: red;
+`
+
 
 export default function Index({ allPosts }) {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
+
+
   return (
     <>
+   
       <Layout>
+     
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+            <title>Next.js Blog Example with {CMS_NAME}</title>
         </Head>
+        <Container>
+        <StyledDiv>
+          If this is red styles are working! This can be found and removed in index.js.
+        </StyledDiv>
+        </Container>
         <div>
+   
           <Intro />
           {heroPost && (
             <HeroPost
@@ -31,6 +48,7 @@ export default function Index({ allPosts }) {
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </div>
       </Layout>
+
     </>
   )
 }

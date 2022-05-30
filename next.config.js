@@ -4,4 +4,5 @@ module.exports = {
     path: '/'
 
   },
+  reactStrictMode: false,
 }
