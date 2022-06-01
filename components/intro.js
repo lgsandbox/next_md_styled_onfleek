@@ -1,20 +1,21 @@
-import { CMS_NAME } from '../lib/constants'
+import Avatar from '../components/avatar'
+import Image from 'next/link'
 
-export default function Intro() {
+
+export default function Intro({ author, picture, name }) {
   return (
     <section>
       <h1>
-        Blog.
+        Land.on The Open Web
       </h1>
-      <h4>
-        A statically generated blog example using{' '}
-        <a
-          href="https://nextjs.org/"
-        >
-          Next.js
-        </a>{' '}
-        and {CMS_NAME}. Configured for IPFS - on Fleek!
-      </h4>
+      <h6>
+       <div>
+  
+        </div>
+      Landon Grammer is a JavaScript enthusiast & web developer. He is building next generation JAM stack dApps and other fun stuff.
+      </h6>
+
+
     </section>
   )
 }

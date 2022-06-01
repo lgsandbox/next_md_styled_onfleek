@@ -4,5 +4,11 @@ module.exports = {
     path: '/'
 
   },
+
   reactStrictMode: false,
+  exportPathMap: function() {
+    return {
+      '/': { page: '/' },
+    }
+    }
 }

@@ -6,13 +6,8 @@ import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
-import styled from 'styled-components'
-import { Container } from '../styles/global.styles'
-
-const StyledDiv = styled.div`
-  color: red;
-`
-
+import { Container, PageContainer } from '../styles/global.styles'
+import Discord from '../components/discord'
 
 export default function Index({ allPosts }) {
   const heroPost = allPosts[0]
@@ -21,17 +16,12 @@ export default function Index({ allPosts }) {
 
   return (
     <>
-   
+
+  
       <Layout>
-     
-        <Head>
-            <title>Next.js Blog Example with {CMS_NAME}</title>
-        </Head>
-        <Container>
-        <StyledDiv>
-          If this is red styles are working! This can be found and removed in index.js.
-        </StyledDiv>
-        </Container>
+      <PageContainer>
+
+      
         <div>
    
           <Intro />
@@ -47,7 +37,10 @@ export default function Index({ allPosts }) {
           )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </div>
+            <Discord/>
+        </PageContainer>
       </Layout>
+    
 
     </>
   )

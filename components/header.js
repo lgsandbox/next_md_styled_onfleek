@@ -1,21 +1,16 @@
 import Link from 'next/link'
-import styled from 'styled-components'
+import Image from 'next/image'
 
-const Red = styled.div`
-  color: red;
-`
 
-export default function Header() {
+export default function Header(author, picture, name) {
   return (
     <h2>
       <Link href="/">
-        <a>Blog</a>
-
+        <a>Land.on The Open Web</a>
+     
       </Link>
 
-      <Red>
-          styles active if red this is in header.js
-      </Red>
+      
     </h2>
   )
 }
